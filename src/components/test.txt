@@ -1,0 +1,129 @@
+ {/* Grid Layout
+      <Grid width={"70%"} container direction={"column"} spacing={2} justifyContent={"center"} alignItems={"flex-start"}>
+        {/* Item 1 */}
+        <Grid size={{ xs: 12, sm: 12, md: 7, lg: 6, xl: 5 }} >
+
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 350,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 1</Typography>
+              <Typography variant="body2">
+                Content for Card 1. Dimensions: 6 columns, 350px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Item 2 */}
+        <Grid size={{ xs: 12, sm: 4, md: 4, lg: 3, xl: 3 }}>
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 350,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 2</Typography>
+              <Typography variant="body2">
+                Content for Card 2. Dimensions: 3 columns, 350px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
+
+
+        {/* Item 4 */}
+        <Grid size={{ xs: 12, sm: 4, md: 4, lg: 5, xl: 4 }}>
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 351,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 4</Typography>
+              <Typography variant="body2">
+                Content for Card 4. Dimensions: 5 columns, 351px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Item 5 */}
+        <Grid size={{ xs: 12, sm: 4, md: 4, lg: 5, xl: 4 }}>
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 351,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 5</Typography>
+              <Typography variant="body2">
+                Content for Card 5. Dimensions: 5 columns, 351px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+
+        <Grid container direction={"column"} spacing={2} justifyContent={"center"} alignItems={"flex-start"}>
+
+        {/* Item 3 */}
+
+        <Grid size={{ xs: 12, sm: 4, md: 4, lg: 5, xl: 4 }}>
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 460,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 3</Typography>
+              <Typography variant="body2">
+                Content for Card 3. Dimensions: 5 columns, 460px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Item 6 */}
+        <Grid size={{ xs: 12, sm: 4, md: 4, lg: 5, xl: 4 }}>
+          <Card
+            sx={{
+              borderRadius: '20px',
+              height: 100,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflow: 'hidden',
+            }}>
+            <CardContent>
+              <Typography variant="h5">Card 6</Typography>
+              <Typography variant="body2">
+                Content for Card 6. Dimensions: 5 columns, 100px height.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid> */}
