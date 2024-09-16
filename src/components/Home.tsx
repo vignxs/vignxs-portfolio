@@ -31,14 +31,23 @@ export const Home = () => {
       ease: "linear"
     });
 
-   
+
   }, []);
 
-  
+
 
   return (
-    <Box sx={{ backgroundColor: "background.default", minHeight: "100vh", p: 2 }}>
-      {/* AppBar */}  
+    <Box sx={{
+      backgroundColor: "background.default", minHeight: "100vh", p: 2
+      , '& .MuiAccordion-root': {
+        boxShadow: 'none',
+      },
+      "& .MuiAccordion-root:before": {
+        backgroundColor: "#A6D8F8",
+        height: "1.8px"
+      }
+    }}>
+      {/* AppBar */}
       <AppBar
         position="static"
         color="primary"
@@ -46,6 +55,7 @@ export const Home = () => {
           height: "75px",
           borderRadius: '20px',
           mb: 2,
+          boxShadow: 'none',
         }}
       >
         <Toolbar sx={{ height: '100%', justifyContent: 'space-between' }}>
@@ -64,7 +74,7 @@ export const Home = () => {
         <Grid spacing={2} height={"100%"} width={{ xs: "100%", sm: "60%" }} sx={{ bgColor: "red" }} container size={16}>
           <Grid size={{ xs: 16, sm: 7, md: 3, lg: 8, xl: 8 }} >
 
-            <Card 
+            <Card
               // ref={addToRefs}
               sx={{
                 borderRadius: '20px',
@@ -72,6 +82,7 @@ export const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                boxShadow: 'none',
                 overflow: 'hidden',
               }}>
               <CardContent sx={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -86,7 +97,7 @@ export const Home = () => {
                     right: 16,
                   }}
                 />
-                <Box sx={{ mt: 'auto', mb:3 }}>
+                <Box sx={{ mt: 'auto', mb: 3 }}>
                   <Typography variant="h5">Python Developer Specializing in AI, AWS, Django Solutions.</Typography>
                 </Box>
               </CardContent>
@@ -104,6 +115,7 @@ export const Home = () => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
+                boxShadow: 'none',
                 overflow: 'hidden',
               }}>
               <CardContent sx={{ pb: "0 !important", p: 0, height: '100%', width: '100%' }}>
@@ -134,6 +146,7 @@ export const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                boxShadow: 'none',
                 overflow: 'hidden',
               }}>
               <CardContent sx={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -142,7 +155,7 @@ export const Home = () => {
                   sx={{
                     fontSize: "30px",
                     position: 'absolute',
-                    mt: 2, 
+                    mt: 2,
                     // top: 16,
                     // right: 16,
                   }}
@@ -161,6 +174,7 @@ export const Home = () => {
               sx={{
                 borderRadius: '20px',
                 bgcolor: "#A6D8F8",
+                boxShadow: 'none',
                 height: 260,
                 display: 'flex',
                 flexDirection: 'column',
@@ -169,12 +183,12 @@ export const Home = () => {
               }}>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Box width={"90%"} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <Typography variant="body2" sx={{mt: 2}}>
+                  <Typography variant="body2" sx={{ mt: 2 }}>
                     Have questions? <br /> I'd love to help!
-                </Typography>
-                  <CallMadeIcon sx={{ fontSize: "30px", mt: 2 }} /> 
+                  </Typography>
+                  <CallMadeIcon sx={{ fontSize: "30px", mt: 2 }} />
                 </Box>
-                <Typography sx={{  mt: 10 }} fontWeight={"medium"} variant="h2" >Contact Me!</Typography>
+                <Typography sx={{ mt: 10 }} fontWeight={"medium"} variant="h2" >Contact Me!</Typography>
 
               </CardContent>
             </Card>
@@ -193,6 +207,7 @@ export const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                boxShadow: 'none',
                 overflow: 'hidden',
               }}
             >
@@ -205,12 +220,15 @@ export const Home = () => {
                   sx={[
                     expanded
                       ? {
+
                         '& .MuiAccordion-region': {
                           height: 'auto',
                         },
                         '& .MuiAccordionDetails-root': {
                           display: 'block',
+                          boxShadow: 'none',
                         },
+
                       }
                       : {
                         '& .MuiAccordion-region': {
@@ -218,7 +236,9 @@ export const Home = () => {
                         },
                         '& .MuiAccordionDetails-root': {
                           display: 'none',
+                          boxShadow: 'none',
                         },
+
                       },
                   ]}
                 >
@@ -227,7 +247,7 @@ export const Home = () => {
                     aria-controls="panel1-content"
                     id="panel1-header"
                   >
-                    <Typography  fontSize={20} fontWeight={"medium"}>ThreeFacts</Typography>
+                    <Typography fontSize={20} fontWeight={"medium"}>ThreeFacts</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <img
@@ -256,7 +276,7 @@ export const Home = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-             
+
                  
                 >
                   <AccordionSummary
@@ -274,8 +294,8 @@ export const Home = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-            
                  
+
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -306,17 +326,18 @@ export const Home = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                boxShadow: 'none',
                 overflow: 'hidden',
               }}>
               <CardContent sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', height: '100%' }}>
-                <Box width={"80%"} sx={{ display: 'flex', justifyContent: 'space-between', mt: 'auto'  }}>
+                <Box width={"80%"} sx={{ display: 'flex', justifyContent: 'space-between', mt: 'auto' }}>
                   <IconButton aria-label="Instagram" href="https://instagram.com/your_username" target="_blank">
-                    <InstagramIcon  />
+                    <InstagramIcon />
                   </IconButton>
-                  <IconButton aria-label="Twitter"  href="https://twitter.com/your_username" target="_blank">
+                  <IconButton aria-label="Twitter" href="https://twitter.com/your_username" target="_blank">
                     <TwitterIcon />
                   </IconButton>
-                  <IconButton aria-label="LinkedIn"  href="https://linkedin.com/in/your_profile" target="_blank">
+                  <IconButton aria-label="LinkedIn" href="https://linkedin.com/in/your_profile" target="_blank">
                     <LinkedInIcon />
                   </IconButton>
                 </Box>
