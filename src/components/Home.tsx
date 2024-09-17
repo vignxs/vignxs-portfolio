@@ -188,7 +188,7 @@ export const Home = () => {
                   </Typography>
                   <CallMadeIcon sx={{ fontSize: "30px", mt: 2 }} />
                 </Box>
-                <Typography sx={{ mt: 10 }} fontWeight={"medium"} variant="h2" >Contact Me!</Typography>
+                <Typography sx={{ mt: 10 }} fontWeight={"medium"} variant="h3" >Contact Me!</Typography>
 
               </CardContent>
             </Card>
